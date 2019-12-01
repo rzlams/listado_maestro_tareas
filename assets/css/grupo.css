@@ -1,0 +1,133 @@
+.group-page {
+	height: 70vh;
+	width: 75vw;
+	position: fixed;
+	left: 25vw;
+	top: 30vh;
+}
+.lista-personal {
+	position: fixed;
+	left: 0;
+	top: 30vh;
+	height: 70vh;
+	width: 25vw;
+	border-right: 1px solid green;
+	background-color: lightgray;
+	overflow-y: auto;
+	z-index: 100;
+}
+.groups-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 2vw;
+	padding: 2em 7vw;
+	grid-row-gap: 2vw;
+	grid-auto-rows: minmax(30vh,1fr);
+}
+.info-personal {
+	display: none;
+	position: fixed;
+	top: 30vh;
+	left: 24.5vw;
+	height: 70vh;
+	width: 40vw;
+	background-color: lightblue;
+}
+.link-personal {
+	padding: .5em 1em;
+	display: block;
+	text-overflow: ellipsis; 
+	white-space: nowrap;
+	color: black;
+	text-decoration: none;
+}
+.link-personal.sin-grupo {
+	color: red;
+	font-weight: bold;
+}
+.link-personal:hover {
+	background-color: lightblue;
+}
+/*
+.link-personal:hover + .info-personal {
+	display: block;
+}
+*/
+.title.grupo {
+	margin: 0;
+}
+.link-titulo {
+	text-decoration: none;
+}
+.link-titulo .title.grupo, .link-titulo .title.personal {
+	color: black;
+	transition: all .4s;
+}
+.link-titulo:hover .title.grupo {
+	background-color: var(--verde-claro);
+	color: white;
+}
+.link-titulo:hover .title.personal {
+	background-color: tomato;
+}
+.group {
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column; 
+}
+.group-header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	padding: .5em 0;
+	overflow: hidden;
+}
+.delete-group {
+	position: absolute;
+	right: .5em;
+	top: .3em;
+	color: red;
+	font-size: 1.5em;
+	transition: all .4s;
+}
+.delete-group:hover {
+	right: .3em;
+	top: .1em;
+	font-size: 2em;
+}
+.supervisor-grupo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: .5em 0;
+	background-color: var(--verde-claro);
+}
+.group-body {
+	display: flex;
+	flex-direction: column;
+	padding: .5em 1em;
+}
+.empleado-grupo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	margin-bottom: .5em;
+}
+.nombre-empleado {
+	text-overflow: ellipsis; 
+	white-space: nowrap;
+	min-width: 92%;
+}
+.jefe-icon {
+	padding-left: .2em;
+	min-width: 8%;
+	color: green;
+	font-size: 1.2em;
+	transition: all .4s;
+}
+.jefe-icon:hover {
+	opacity: .6;
+}

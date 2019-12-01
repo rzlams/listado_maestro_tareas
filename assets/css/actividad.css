@@ -1,0 +1,46 @@
+/* GESTION */
+.gestion-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.gestion-form > select {
+	margin-left: .5em;
+	font-size: 1em;
+	max-width: 30%;
+}
+.button.edit {
+	margin: 0 1.5em 0 2em;
+	color: blue;
+	font-size: 1.5em;
+}
+.button.upload {
+	font-size: 1.8em;
+	overflow: hidden;
+}
+
+
+/* EDITAR */
+.document-group {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.2em;
+	padding: 1em 1.5em .5em 1.5em;
+	border-bottom: 2px solid black;
+}
+.icons > a:first-child {
+	margin-right: 1em;
+}
+.upload-form {
+	margin-top: 1em;
+	display: flex;
+}
+.nombre {
+	text-overflow: ellipsis; 
+	white-space: nowrap;
+	width: 80%;
+}
+.actividad-scroll-container {
+	padding: 0 1em;
+}
